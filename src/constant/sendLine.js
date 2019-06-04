@@ -8,11 +8,11 @@ class sendLine {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
       };
-      text_reply = ruleChatbot(msgArray);
+    //   text_reply = ruleChatbot(msgArray);
 
       let body = JSON.stringify({
           replyToken: reply_token,
-          messages: text_reply
+          messages: msgArray
       });
 
       console.log(body);
