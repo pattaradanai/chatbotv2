@@ -8,10 +8,11 @@ class sendLine {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
       };
-  
+      text_reply = ruleChatbot(msgArray);
+
       let body = JSON.stringify({
           replyToken: reply_token,
-          messages: msgArray
+          messages: text_reply
       });
 
       console.log(body);
@@ -28,6 +29,18 @@ class sendLine {
       });
 
       return false;
+  }
+  ruleChatbot(msg){
+        //  msg.forEach(element => {
+        //   console.log(element)
+        // });
+      const reply = '';
+        if(msg == 'hi'){
+            reply = 'สวัสดี';
+        }else{
+            const reply = 'ไอ้โง่';
+        }
+    return reply;
   }
 
   messageNews(detailsArray) {
