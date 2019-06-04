@@ -34,11 +34,11 @@ class sendLine {
         //  msg.forEach(element => {
         //   console.log(element)
         // });
-      const reply = '';
+        const reply = '';
         if(msg == 'hi'){
-            reply = 'สวัสดี';
+             reply = 'สวัสดี';
         }else{
-            const reply = 'ไอ้โง่';
+             reply = 'ไอ้โง่';
         }
     return reply;
   }
