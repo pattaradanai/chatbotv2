@@ -27,6 +27,7 @@ app.post('/webhook',async (req, res) => {
 
     body.push(contentBody);
   } else {
+    console.log(msg);
     body.push(serviceLine.messageText(msg));
   }
 
