@@ -30,18 +30,7 @@ class sendLine {
 
       return false;
   }
-  ruleChatbot(msg){
-        //  msg.forEach(element => {
-        //   console.log(element)
-        // });
-        const reply = '';
-        if(msg == 'hi'){
-             reply = 'สวัสดี';
-        }else{
-             reply = 'ไอ้โง่';
-        }
-    return reply;
-  }
+
 
   messageNews(detailsArray) {
     const content = this.detailMessageInNews(detailsArray);
@@ -300,11 +289,23 @@ class sendLine {
 		
 		return contentJson;
   }
-    
+  ruleChatbot(msg){
+        //  msg.forEach(element => {
+        //   console.log(element)
+        // });
+        const reply = '';
+        if(msg == 'hi'){
+            reply = 'สวัสดี';
+        }else{
+            reply = 'ไอ้โง่';
+        }
+    return reply;
+    } 
   messageText(message) {
+    const reply = ruleChatbot(message);
     const msg = {
         type: 'text',
-        text: message
+        text: reply
     };
 
     return msg;
