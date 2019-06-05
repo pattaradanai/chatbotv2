@@ -289,20 +289,17 @@ class sendLine {
 		
 		return contentJson;
   }
-  ruleChatbot(msg){
-        //  msg.forEach(element => {
-        //   console.log(element)
-        // });
-        const reply = '';
-        if(msg == 'hi'){
-            reply = 'สวัสดี';
-        }else{
-            reply = 'ไอ้โง่';
-        }
+    ruleChatbot(){
+        const reply = 'ไอ้โง่';
+        // if(msg == 'hi'){
+        //     reply = 'สวัสดี';
+        // }else{
+        //     reply = 'ไอ้โง่';
+        // }
     return reply;
     } 
   messageText(message) {
-    const reply = ruleChatbot(message);
+    const reply = ruleChatbot();
     const msg = {
         type: 'text',
         text: reply
