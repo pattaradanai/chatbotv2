@@ -299,10 +299,10 @@ class sendLine {
     return reply;
     } 
   messageText(message) {
-    const reply = ruleChatbot();
+   
     const msg = {
         type: 'text',
-        text: reply
+        text: 'ไอ้โง่ววว'
     };
 
     return msg;
