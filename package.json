@@ -7,7 +7,7 @@
   "dependencies": {
     "aimlinterpreter": "^0.1.7",
     "aimlparser": "^1.0.5",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
